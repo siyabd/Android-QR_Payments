@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="0dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rellay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <TextView
+                android:id="@+id/txtEvent_date"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:text="18"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:background="@color/colorDateBackground"
+                android:textColor="#ffffff"
+                />
+
+            <TextView
+                android:id="@+id/txtMonth2"
+                android:layout_width="45dp"
+                android:layout_height="42dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:text="OCT"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/txtEvent_date"
+                android:textAlignment="center"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"/>
+
+            <LinearLayout
+                android:id="@+id/EventDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtEvent_date"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personas Are More Than “People”"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif"/>
+
+
+                <TextView
+                    android:id="@+id/txtEvent_desctiption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personas are distilled essences of real users. With personas, we build empathy..."
+                    android:textSize="13sp"
+                    android:textColor="#757575"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/txtEventCreator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by Absa"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtEventPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="115pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgEventScore"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_below="@id/txtMonth2"
+                android:layout_alignParentRight="true"
+                />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgProgressBar"-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_chart_yellow"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:layout_toLeftOf="@id/overflow"-->
+                <!--android:layout_below="@id/txtMonth2"-->
+
+                <!--/>-->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

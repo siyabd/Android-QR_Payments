@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFragmentClass.GenerateQRCode">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Generate QR CODES" />
+    <!-- Name -->
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginStart="10dp"
+        android:text="Name" />
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/itemName"
+        android:hint="Product name" />
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/txtPriceDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="10dp"
+        android:text="price" />
+
+    <EditText
+        android:id="@+id/txtDescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtPriceDescr"
+        android:hint="Item Price" />
+
+    <!-- ADD button======================== -->
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDescr" />
+
+    <TextView
+        android:id="@+id/itemTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgView"
+        android:layout_marginTop="10dp"
+        android:text="QR Type" />
+
+
+    <Spinner
+        android:id="@+id/qrSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/itemTag" />
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrSpinner"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:text="Send via" />
+    <!-- ADD button -->
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="218dp"
+        android:text="Generate code" />
+
+</RelativeLayout>

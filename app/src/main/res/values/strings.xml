@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">CloudDime</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Planets">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="names">
+        <item>Select a Branch</item>
+        <item>North Towers</item>
+        <item>South Towers</item>
+        <item>East Towers</item>
+        <item>West Towers</item>
+        <item>Others</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">256</string>
+    <string name="backdrop_subtitle">Points</string>
+
+    <string-array name="start_times">
+        <item>12:00am</item>
+        <item>12:30am</item>
+        <item>1:00am</item>
+        <item>1:30am</item>
+        <item>2:00am</item>
+        <item>2:30am</item>
+        <item>3:00am</item>
+        <item>3:30am</item>
+        <item>4:00am</item>
+        <item>4:30am</item>
+        <item>5:00am</item>
+        <item>5:30am</item>
+        <item>6:00am</item>
+        <item>6:30am</item>
+        <item>7:00am</item>
+        <item>7:30am</item>
+        <item>8:00am</item>
+        <item>8:30am</item>
+        <item>9:00am</item>
+        <item>9:30am</item>
+        <item>10:00am</item>
+        <item>10:30am</item>
+        <item>11:00am</item>
+        <item>11:30am</item>
+        <item>12:00pm</item>
+        <item>12:30pm</item>
+        <item>1:00pm</item>
+        <item>1:30pm</item>
+        <item>2:00pm</item>
+        <item>2:30pm</item>
+        <item>3:00pm</item>
+        <item>3:30pm</item>
+        <item>4:00pm</item>
+        <item>4:30pm</item>
+        <item>5:00pm</item>
+        <item>5:30pm</item>
+        <item>6:00pm</item>
+        <item>6:30pm</item>
+        <item>7:00pm</item>
+        <item>7:30pm</item>
+        <item>8:00pm</item>
+        <item>8:30pm</item>
+        <item>9:00pm</item>
+        <item>9:30pm</item>
+        <item>10:00pm</item>
+        <item>10:30pm</item>
+        <item>11:00pm</item>
+        <item>11:30pm</item>
+    </string-array>
+
+    <string-array name="end_time">
+        <item>12:00am</item>
+        <item>12:30am</item>
+        <item>1:00am</item>
+        <item>1:30am</item>
+        <item>2:00am</item>
+        <item>2:30am</item>
+        <item>3:00am</item>
+        <item>3:30am</item>
+        <item>4:00am</item>
+        <item>4:30am</item>
+        <item>5:00am</item>
+        <item>5:30am</item>
+        <item>6:00am</item>
+        <item>6:30am</item>
+        <item>7:00am</item>
+        <item>7:30am</item>
+        <item>8:00am</item>
+        <item>8:30am</item>
+        <item>9:00am</item>
+        <item>9:30am</item>
+        <item>10:00am</item>
+        <item>10:30am</item>
+        <item>11:00am</item>
+        <item>11:30am</item>
+        <item>12:00pm</item>
+        <item>12:30pm</item>
+        <item>1:00pm</item>
+        <item>1:30pm</item>
+        <item>2:00pm</item>
+        <item>2:30pm</item>
+        <item>3:00pm</item>
+        <item>3:30pm</item>
+        <item>4:00pm</item>
+        <item>4:30pm</item>
+        <item>5:00pm</item>
+        <item>5:30pm</item>
+        <item>6:00pm</item>
+        <item>6:30pm</item>
+        <item>7:00pm</item>
+        <item>7:30pm</item>
+        <item>8:00pm</item>
+        <item>8:30pm</item>
+        <item>9:00pm</item>
+        <item>9:30pm</item>
+        <item>10:00pm</item>
+        <item>10:30pm</item>
+        <item>11:00pm</item>
+        <item>11:30pm</item>
+
+    </string-array>
+
+
+    <!--Event time zone-->
+    <string name="event_start_time">09:00am</string>
+    <string name="event_end_time">10:00am</string>
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Create Account</string>
+    <string name="slide_1_desc">Your account has been successfully created. Check your email for the confirmation link</string>
+
+    <string name="slide_2_title">Earn</string>
+    <string name="slide_2_desc">Earn Points by making bookings and referring friends to use CloudDime. </string>
+
+    <string name="slide_3_title">Spend</string>
+    <string name="slide_3_desc">Your account has been successfully created. Check your email for the confirmation link</string>
+
+    <string name="slide_4_title">Stay Connected</string>
+    <string name="slide_4_desc">Scan a QR Code to unlock your rewards!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+    <string name="points">points</string>
+
+    <!--Scan QR code Screen-->
+    <string name="scan_qr_code">The QR code will be detected automatically once you have positioned the code within the guidelines.</string>
+
+
+    <string-array name="achievements_types">
+        <item>AchievementType</item>
+        <item>Business</item>
+        <item>Personal</item>
+    </string-array>
+    <string name="title_activity_fragment_achievements">FragmentAchievementsActivity</string>
+
+</resources>

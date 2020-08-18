@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp">
+
+    <Spinner
+        android:id="@+id/achType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/achType"
+        android:layout_marginTop="50dp"
+        android:hint="PHD in Design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlAchievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/description"
+                >
+
+                <ImageView
+                    android:id="@+id/imgAccessTime1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:text="18"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:src="@drawable/ic_calendar_grey"
+                    android:textColor="#ffffff"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgAccessTime1"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/description"
+                        android:layout_marginTop="6dp"
+                        android:hint="2010-12-25"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/achievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rlAchievements"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:text="Submit"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

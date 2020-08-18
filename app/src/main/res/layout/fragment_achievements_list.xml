@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/viewBg">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvCard_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="0dp">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlAchievement_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            android:layout_below="@+id/relay5"
+            >
+
+            <ImageView
+                android:id="@+id/imgAchievement"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:text="18"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:src="@drawable/cloudimelogo"
+                android:textColor="@color/colorWhite"
+                />
+
+            <LinearLayout
+                android:id="@+id/llAchievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/imgAchievement"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/txtQualification"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTabText"
+                    android:text="Mitel"
+                    android:textStyle="bold"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:textColor="@color/colorTabText"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="2016-05-23"
+                    android:id="@+id/Qualification_date"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_toRightOf="@+id/llAchievement"
+                android:textColor="@color/colorPoints"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

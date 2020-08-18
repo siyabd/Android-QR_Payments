@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFragmentClass.CreateEventsFragment">
+
+<RelativeLayout
+    android:id="@+id/rlHeader"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    >
+
+    <ImageView
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/ic_header_background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Create an Event"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="sans-serif"/>
+
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeader"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/relay5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/imgTitle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:text="18"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:src="@drawable/ic_title_grey"
+                android:textColor="@color/colorWhite"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgTitle"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add a title"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/relay3"
+        android:layout_marginTop="20dp">
+
+        <Spinner
+            android:id="@+id/branch"
+            android:backgroundTint="#ffbb03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"></Spinner>
+
+
+        <SeekBar
+            android:id="@+id/points_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/branch"
+            android:layout_marginTop="20dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relay5"
+        >
+
+        <ImageView
+            android:id="@+id/imgAccessTime"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:text="18"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:src="@mipmap/ic_access_time_grey"
+            android:textColor="#ffffff"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgAccessTime"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <Spinner
+                android:id="@+id/start_time"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Event Start Time"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/end_time"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Event End Time"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_toRightOf="@+id/linear1"
+            />
+
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/relay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relay2"
+        >
+
+        <ImageView
+            android:id="@+id/imgAccessTime1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:text="18"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:src="@drawable/ic_calendar_grey"
+            android:textColor="#ffffff"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgAccessTime1"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/event_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Event Start Time"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/relay1"
+            >
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/linear4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/generateQR"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Generate QR Code"-->
+                    <!--android:textColor="@color/colorPrimaryDark"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:background="@android:color/transparent"-->
+
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <Button
+                android:id="@+id/create_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp"
+                android:text="Create event"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                />
+            <!--android:layout_toRightOf="@+id/linear4"-->
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>

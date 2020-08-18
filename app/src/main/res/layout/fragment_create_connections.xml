@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp">
+
+
+    <EditText
+        android:id="@+id/specialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:hint="Engineering/Softwares"/>
+
+    <EditText
+        android:id="@+id/theirname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/specialization"
+        android:layout_marginTop="14dp"
+        android:hint="Digital Academy"/>
+
+    <Button
+        android:id="@+id/connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/theirname"
+        android:layout_marginTop="4dp"
+        android:text="Submit"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

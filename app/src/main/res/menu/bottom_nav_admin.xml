@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/nav_adminhome"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/nav_allEvents"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="Events"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/nav_ApproveUsers"
+        android:icon="@drawable/ic_camera_alt_black_24dp"
+        android:title="Approve"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/nav_QRcode"
+        android:icon="@drawable/ic_event_available_black_24dp"
+        android:title="Events"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/nav_registerAdmin"
+        android:icon="@drawable/ic_user"
+        android:title="Profile"
+        app:showAsAction="ifRoom"/>
+</menu>
